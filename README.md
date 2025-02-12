@@ -4,13 +4,25 @@ Author: Charlene D'Costa <br />
 Date: February 10, 2025 <br />
 Coursework for the Meta Marketing Analytics Professional Certificate. <br />
 
-[Pet Store Transactions Dataset](need to upload)
+[Pet Store Transactions Dataset](https://github.com/dcostachar/pet-store-transactions-analysis/blob/main/data/transactions.csv)
 
 # Project Overview
 
+<details>
+  <summary>Defining the business problem.</summary>
+
+<br />
+
 For this project, I used Python to perform data cleaning and exploratory data analysis (EDA) on a fictitious pet store transactions dataset. I began by cleaning the data—handling missing values, removing data anomalies, and dropping columns with excessive nulls. Next, I conducted EDA to uncover product sales trends, analyze the quantity sold by category, and identify both the most popular and the highest-priced categories within different product lines. Finally, I created visualizations, including bar and box plots, to provide stakeholders with actionable insights on top-selling categories and price distributions, informing business decisions about which product lines drive the most revenue and where pricing adjustments might be considered.
 
+</details>
+
 # Data Cleaning
+
+<details>
+  <summary>Cleaning the data for analysis. </summary> 
+
+<br />
 
 In this section, I will import and clean the dataset to prepare it for analysis. I will use PyCharm as my integrated development environment (IDE) along with its Jupyter Notebook integration to perform the analysis. Additionally, I import the following libraries, which will be used throughout the project: pandas, matplotlib, and seaborn.
 
@@ -490,8 +502,12 @@ df.isna().sum()
     dtype: int64
 
 
+</details>
 
 # Exploratory Data Analysis
+
+<details>
+  <summary>Uncovering patterns and analyzing relationships between variables. </summary>
 
 ### Question 5: Create a `Subtotal` column by multiplying the `Price` and `Quantity` values.
 
@@ -864,9 +880,12 @@ priciest_category_dog = 'toy'
                   treat               25.48
     Name: Price, dtype: float64
 
-
+</details>
 
 # Data Visualization
+
+<details>
+  <summary>Using the matplotlib and seaborn libraries to create visualizations.</summary>
 
 ### Question 8: You want to emphasize to your stakeholders that the total number of product categories sold differ between the two `Product_Line` categories ('cat' & 'dog'). Create a horizontal bar plot that has `Product_Category` on the y-axis and the total number of that category sold (using the `Quantity`) by each `Product_Line` category. Also change the axis labels to something meaningful and add a title.
 
@@ -920,4 +939,4 @@ I created a box plot to illustrate the distribution of product prices. The plot 
     
 ![png](pet-store-transactions-analysis_files/pet-store-transactions-analysis_26_0.png)
     
-
+</details>
